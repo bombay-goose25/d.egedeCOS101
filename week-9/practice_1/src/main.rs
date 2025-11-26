@@ -3,7 +3,7 @@ fn main() {
     let announce = "Wk-9 rust file input & output\n";
     let dept = "Department of computer science";
 
-    let mut file = std::fs::File::create("data.txt").expect("create failed");
+    let mut file = std::fs::File::create("data.txt").expect("creation failed");
     file.write_all("welcome to rust programming\n"
 .as_bytes()).expect("write faild");
 file.write_all(announce.as_bytes()).expect("write failed");
