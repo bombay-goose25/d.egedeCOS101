@@ -17,7 +17,6 @@ fn main() -> io::Result<()> {
     for record in records {
         file.write_all(record.as_bytes())?;
     }
-
     println!("File uploaded successfully");
     Ok(())
 }
