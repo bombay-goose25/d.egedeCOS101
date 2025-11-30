@@ -1,5 +1,5 @@
 fn main() {
-    let num:i32 = 5;
+    let mut num:i32 = 5;
     mutate_num_to_zero(&mut num);
     println!("The value is :{}",num);
 }
